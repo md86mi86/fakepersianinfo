@@ -1,0 +1,29 @@
+{
+  "name": "fakepersianinfo",
+  "version": "1.0.0",
+  "description": "A simple JavaScript library for generating fake Persian (Farsi) user information.",
+  "main": "src/FakePersianInfo.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/md86mi86/fakepersianinfo.git"
+  },
+  "keywords": [
+    "fake",
+    "persian",
+    "farsi",
+    "user",
+    "data",
+    "generator",
+    "random"
+  ],
+  "author": "Mohammad Maleki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/md86mi86/fakepersianinfo/issues"
+  },
+  "homepage": "https://github.com/md86mi86/fakepersianinfo#readme"
+}
