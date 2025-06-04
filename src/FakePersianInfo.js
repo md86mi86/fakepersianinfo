@@ -1,22 +1,11 @@
+import data from "./data.json" assert { type: "json" };
 class FakePersianInfo {
   constructor() {
-    this.cachedData = null;
+    this.cachedData = data;
   }
 
   async getInfo() {
-    if (this.cachedData) return this.cachedData;
-    try {
-      const res = await fetch("../src/data.json");
-      if (!res.ok) {
-        throw new Error(`HTTP ERROR! status : ${res.status}`);
-      }
-
-      this.cachedData = await res.json();
-      return this.cachedData;
-    } catch (err) {
-      console.error("Fetch error : ", err);
-      throw err;
-    }
+    return this.cachedData;
   }
 
   async getFirstName() {
